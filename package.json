@@ -20,7 +20,9 @@
     "axios": "^1.4.0",
     "commander": "^11.0.0",
     "fs-extra": "^11.1.1",
+    "http-errors": "^2.0.0",
     "lodash": "^4.17.21",
+    "nanoid": "^4.0.2",
     "node-jose": "^2.2.0",
     "openapi-client-axios": "^7.2.0"
   },
@@ -31,6 +33,7 @@
     "@babel/plugin-syntax-import-assertions": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@babel/register": "^7.22.5",
+    "@karmaniverous/edge-logger": "^1.2.0",
     "@karmaniverous/get-dotenv": "^2.4.3",
     "@types/node": "^20.3.1",
     "babel-plugin-lodash": "^3.3.4",
@@ -66,7 +69,8 @@
       "@babel/register",
       "chai-match-pattern"
     ],
-    "spec": "./**/*.test.!(*.*)"
+    "spec": "./**/*.test.!(*.*)",
+    "timeout": 60000
   },
   "release-it": {
     "github": {
