@@ -1,5 +1,5 @@
 {
-  "name": "@karmaniverous/client-visa",
+  "name": "@veterancrowd/client-visa",
   "version": "0.0.0",
   "publishConfig": {
     "access": "public"
