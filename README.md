@@ -1,79 +1,26 @@
-# NPM Package Template
+# Visa Client
 
-You wrote a sweet piece of code! Releasing it on [NPM](https://www.npmjs.com/)
-seems like the obvious next step. Right?
-
-_Try it!_ Not as easy to do as you might think. At high quality. From scratch.
-
-So here's a plug-and-play NPM package template that offers the following
-features:
-
-- Tree-shakable support for the latest ES6 goodies with
-  [`eslint`](https://www.npmjs.com/package/eslint) _uber alles_.
-
-- CJS distributions targeting specific browser support scenarios.
-
-- Command line interfaces for your widget with
-  [`commander`](https://www.npmjs.com/package/commander).
-
-- Automated [`lodash`](https://www.npmjs.com/package/lodash) cherry-picking with
-  [`babel-plugin-lodash`](https://www.npmjs.com/package/babel-plugin-lodash).
-
-- [`mocha`](https://www.npmjs.com/package/mocha) &
-  [`chai`](https://www.npmjs.com/package/chai) for testing, with examples, and a
-  sweet testing console.
-
-- In-code access to
-  [`package.json`](https://github.com/karmaniverous/npm-package-template/blob/main/package.json)
-  data, with no warnings to ignore.
-
-- Code formatting at every save & paste with
-  [`prettier`](https://www.npmjs.com/package/prettier).
-
-- Automated documentation of your API with
-  [`jsdoc-to-markdown`](https://www.npmjs.com/package/jsdoc-to-markdown) and
-  assembly of your README with
-  [`concat-md`](https://www.npmjs.com/package/concat-md).
-
-- One-button release to GitHub & publish to NPM with
-  [`release-it`](https://www.npmjs.com/package/release-it).
-
-**[Click here](https://karmanivero.us/blog/npm-package-template/) for full
-documentation & instructions!**
-
-_If you want to create a React component in an NPM package, use my
-[React Component NPM Package Template](https://github.com/karmaniverous/react-component-npm-package-template)
-instead!_
-
-# Command Line Interface
-
-```text
-Usage: mycli [options]
-
-Foos your bar.
-
-Options:
-  -b, --bar <string>  foo what?
-  -h, --help          display help for command
-```
+A generalized client for selected portions of the Visa Offers Program API.
 
 # API Documentation
 
-```js
-import { foo, PACKAGE_INFO } from '@karmaniverous/npm-package-template`;
-```
+<a name="VisaClientConfig"></a>
 
-<a name="foo"></a>
+## VisaClientConfig : <code>object</code>
+Config object for VisaClient.
 
-## foo(value) ⇒ <code>any</code>
-Returns whatever value is passed.
+**Kind**: global typedef  
+**Properties**
 
-**Kind**: global function  
-**Returns**: <code>any</code> - Whatever value it was passed.  
-
-| Param | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
-| value | <code>any</code> | Any value. |
+| baseUrl | <code>string</code> | Visa API base URL. |
+| clientCert | <code>string</code> | Client certificate in PEM format. |
+| clientKey | <code>string</code> | Client certificate private key in PEM format. |
+| communityCode | <code>string</code> | Visa API community code. |
+| [logger] | <code>object</code> | Logger instance (default is [global console object](https://nodejs.org/api/console.html#class-console)). Must have info, error & debug methods |
+| passphrase | <code>string</code> | Visa API passphrase. |
+| userId | <code>string</code> | Visa API user ID. |
 
 
 ---

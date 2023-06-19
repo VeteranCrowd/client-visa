@@ -6,11 +6,12 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:import/recommended",
     "plugin:jsdoc/recommended",
     "plugin:mocha/recommended",
     "plugin:promise/recommended"
   ],
-  "ignorePatterns": ["/dist/**/*.*", "*.json"],
+  "ignorePatterns": ["/dist/**/*.*", "*.crt", "*.json"],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "babelOptions": {
@@ -22,6 +23,7 @@
   },
   "plugins": ["mocha", "promise"],
   "rules": {
+    "import/extensions": ["error", "ignorePackages"],
     "jsdoc/tag-lines": "off",
     "mocha/no-top-level-hooks": "off"
   },
