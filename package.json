@@ -24,7 +24,7 @@
     "lodash": "^4.17.21",
     "nanoid": "^4.0.2",
     "node-jose": "^2.2.0",
-    "openapi-client-axios": "^7.3.1"
+    "openapi-client-axios": "^7.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.9",
@@ -35,7 +35,7 @@
     "@babel/register": "^7.22.5",
     "@karmaniverous/edge-logger": "^1.3.0",
     "@karmaniverous/get-dotenv": "^3.1.12",
-    "@types/node": "^20.4.4",
+    "@types/node": "^20.4.7",
     "@veterancrowd/aws-cli": "^4.3.6",
     "auto-changelog": "^2.4.0",
     "babel-plugin-lodash": "^3.3.4",
@@ -44,16 +44,16 @@
     "concat-md": "^0.5.1",
     "creditcard-generator": "^0.0.7",
     "crlf": "^1.1.1",
-    "eslint": "^8.45.0",
+    "eslint": "^8.46.0",
     "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsdoc": "^46.4.4",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-jsdoc": "^46.4.5",
     "eslint-plugin-mocha": "^10.1.0",
     "jsdoc-to-markdown": "^8.0.0",
-    "lefthook": "^1.4.7",
+    "lefthook": "^1.4.8",
     "mocha": "^10.2.0",
     "node-random-name": "^1.0.1",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.1",
     "release-it": "^16.1.3"
   },
   "exports": {
