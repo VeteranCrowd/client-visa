@@ -25,6 +25,7 @@
   "rules": {
     "import/extensions": ["error", "ignorePackages"],
     "jsdoc/tag-lines": "off",
+    "mocha/no-skipped-tests": "off",
     "mocha/no-top-level-hooks": "off"
   },
   "settings": { "jsdoc": { "mode": "permissive" } }
