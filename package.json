@@ -34,8 +34,8 @@
     "@babel/preset-env": "^7.24.7",
     "@babel/register": "^7.24.6",
     "@karmaniverous/edge-logger": "^1.3.11",
-    "@types/node": "^20.14.2",
-    "@veterancrowd/aws-cli": "^6.0.8",
+    "@types/node": "^20.14.5",
+    "@veterancrowd/aws-cli": "^6.0.10",
     "auto-changelog": "^2.4.0",
     "babel-plugin-lodash": "^3.3.4",
     "chai": "^5.1.1",
@@ -43,16 +43,17 @@
     "concat-md": "^0.5.1",
     "creditcard-generator": "^0.0.7",
     "crlf": "^1.1.1",
-    "eslint": "^8.57.0",
+    "eslint": "=8",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsdoc": "^48.2.8",
+    "eslint-plugin-jsdoc": "^48.2.12",
     "eslint-plugin-mocha": "^10.4.3",
     "jsdoc-to-markdown": "^8.0.1",
-    "lefthook": "^1.6.15",
+    "knip": "^5.21.2",
+    "lefthook": "^1.6.16",
     "mocha": "^10.4.0",
     "node-random-name": "^1.0.1",
-    "prettier": "^3.3.1",
+    "prettier": "^3.3.2",
     "release-it": "^17.3.0"
   },
   "exports": {
@@ -94,7 +95,7 @@
       "after:release": [
         "git switch -c release/${version}",
         "git push -u origin release/${version}",
-        "git switch dev"
+        "git switch ${branchName}"
       ]
     },
     "npm": {
@@ -103,9 +104,10 @@
   },
   "scripts": {
     "build": "babel lib -d dist/default/lib --delete-dir-on-start --config-file ./dist/default/.babelrc",
-    "doc": "jsdoc2md -c doc/jsdoc.config.json -f lib/**/*.* -t doc/api-template.hbs > doc/2-api.jsdoc2.md && concat-md doc --hide-anchor-links > README.md && crlf --set=CRLF README.md",
+    "knip": "knip",
     "lint": "eslint lib/**",
     "release": "vc -c \"release-it\"",
+    "release:pre": "vc -c \"release-it --no-git.requireBranch --github.prerelease --preRelease\"",
     "test": "vc -c \"mocha\""
   },
   "type": "module"
