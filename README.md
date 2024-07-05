@@ -1,3 +1,9 @@
+[//]: # ' ******************* DO NOT EDIT THIS NOTICE ***************** '
+[//]: # ' This code and all related intellectual property is owned by   '
+[//]: # ' Veteran Crowd Rewards, LLC. It is not to be disclosed, copied '
+[//]: # ' or used without written permission.                           '
+[//]: # ' ************************************************************* '
+
 [![Backup Status](https://cloudback.it/badge/VeteranCrowd/client-visa)](https://cloudback.it)
 
 # Visa Client
@@ -9,21 +15,21 @@ A generalized client for selected portions of the Visa Offers Program API.
 <a name="VisaClientConfig"></a>
 
 ## VisaClientConfig : <code>object</code>
+
 Config object for VisaClient.
 
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| baseUrl | <code>string</code> | Visa API base URL. |
-| clientCert | <code>string</code> | Client certificate in PEM format. |
-| clientKey | <code>string</code> | Client certificate private key in PEM format. |
-| communityCode | <code>string</code> | Visa API community code. |
-| [logger] | <code>object</code> | Logger instance (default is [global console object](https://nodejs.org/api/console.html#class-console)). Must have info, error & debug methods |
-| passphrase | <code>string</code> | Visa API passphrase. |
-| userId | <code>string</code> | Visa API user ID. |
-
+| Name          | Type                | Description                                                                                                                                    |
+| ------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| baseUrl       | <code>string</code> | Visa API base URL.                                                                                                                             |
+| clientCert    | <code>string</code> | Client certificate in PEM format.                                                                                                              |
+| clientKey     | <code>string</code> | Client certificate private key in PEM format.                                                                                                  |
+| communityCode | <code>string</code> | Visa API community code.                                                                                                                       |
+| [logger]      | <code>object</code> | Logger instance (default is [global console object](https://nodejs.org/api/console.html#class-console)). Must have info, error & debug methods |
+| passphrase    | <code>string</code> | Visa API passphrase.                                                                                                                           |
+| userId        | <code>string</code> | Visa API user ID.                                                                                                                              |
 
 ---
 
