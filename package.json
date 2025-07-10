@@ -17,7 +17,7 @@
   "keywords": [],
   "license": "BSD-3-Clause",
   "dependencies": {
-    "axios": "^1.9.0",
+    "axios": "^1.10.0",
     "commander": "^12.1.0",
     "fs-extra": "^11.3.0",
     "http-errors": "^2.0.0",
@@ -27,33 +27,31 @@
     "openapi-client-axios": "^7.6.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.27.2",
-    "@babel/core": "^7.27.4",
-    "@babel/eslint-parser": "^7.27.5",
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/eslint-parser": "^7.28.0",
     "@babel/plugin-syntax-import-assertions": "^7.27.1",
-    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-env": "^7.28.0",
     "@babel/register": "^7.27.1",
-    "@types/node": "^20.19.0",
+    "@types/node": "^20.19.6",
     "@veterancrowd/aws-cli": "^6.1.4",
     "auto-changelog": "^2.5.0",
     "babel-plugin-lodash": "^3.3.4",
-    "chai": "^5.2.0",
+    "chai": "^5.2.1",
     "chai-match-pattern": "^1.3.0",
-    "concat-md": "^0.5.1",
     "creditcard-generator": "^0.0.7",
-    "crlf": "^1.1.1",
     "eslint": "=8",
     "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsdoc": "^48.11.0",
     "eslint-plugin-mocha": "^10.5.0",
     "jsdoc-to-markdown": "^8.0.3",
-    "knip": "^5.60.2",
-    "lefthook": "^1.11.13",
+    "knip": "^5.61.3",
+    "lefthook": "^1.12.1",
     "license-check-and-add": "^4.0.5",
     "mocha": "^10.8.2",
     "node-random-name": "^1.0.1",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "release-it": "^17.11.0"
   },
   "exports": {
@@ -88,7 +86,7 @@
     "hooks": {
       "after:init": [
         "nr lint",
-        "nr doc",
+        "nr test",
         "nr build"
       ],
       "after:release": [
@@ -103,7 +101,6 @@
   },
   "scripts": {
     "build": "babel lib -d dist/default/lib --delete-dir-on-start --config-file ./dist/default/.babelrc",
-    "doc": "jsdoc2md -c doc/jsdoc.config.json -f lib/**/*.* -t doc/api-template.hbs > doc/2-api.jsdoc2.md && concat-md doc --hide-anchor-links > README.md && crlf --set=CRLF README.md",
     "knip": "knip",
     "lint": "eslint lib/**",
     "release": "vc -c \"release-it\"",
