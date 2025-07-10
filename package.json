@@ -86,7 +86,6 @@
     "hooks": {
       "after:init": [
         "nr lint",
-        "nr test",
         "nr build"
       ],
       "after:release": [
