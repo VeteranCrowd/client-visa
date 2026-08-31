@@ -106,6 +106,7 @@
     "lint:fix": "eslint lib/** --fix",
     "release": "vc -c \"release-it\"",
     "release:pre": "vc -c \"release-it preminor --no-git.requireBranch --github.prerelease --preRelease\"",
+    "release:next-version": "release-it --release-version --no-git.requireBranch",
     "test": "vc -c \"mocha\""
   },
   "type": "module"
