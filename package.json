@@ -103,6 +103,7 @@
     "build": "babel lib -d dist/default/lib --delete-dir-on-start --config-file ./dist/default/.babelrc",
     "knip": "knip",
     "lint": "eslint lib/**",
+    "lint:fix": "eslint lib/** --fix",
     "release": "vc -c \"release-it\"",
     "release:pre": "vc -c \"release-it preminor --no-git.requireBranch --github.prerelease --preRelease\"",
     "test": "vc -c \"mocha\""
