@@ -2,7 +2,8 @@
   "name": "@veterancrowd/client-visa",
   "version": "0.2.2",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
@@ -103,7 +104,7 @@
     "knip": "knip",
     "lint": "eslint lib/**",
     "release": "vc -c \"release-it\"",
-    "release:pre": "vc -c \"release-it --no-git.requireBranch --github.prerelease --preRelease\"",
+    "release:pre": "vc -c \"release-it preminor --no-git.requireBranch --github.prerelease --preRelease\"",
     "test": "vc -c \"mocha\""
   },
   "type": "module"
