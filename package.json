@@ -1,8 +1,9 @@
 {
   "name": "@veterancrowd/client-visa",
-  "version": "0.2.2",
+  "version": "0.3.0-0",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
@@ -102,8 +103,10 @@
     "build": "babel lib -d dist/default/lib --delete-dir-on-start --config-file ./dist/default/.babelrc",
     "knip": "knip",
     "lint": "eslint lib/**",
+    "lint:fix": "eslint lib/** --fix",
     "release": "vc -c \"release-it\"",
-    "release:pre": "vc -c \"release-it --no-git.requireBranch --github.prerelease --preRelease\"",
+    "release:pre": "vc -c \"release-it preminor --no-git.requireBranch --github.prerelease --preRelease\"",
+    "release:next-version": "release-it --release-version --no-git.requireBranch",
     "test": "vc -c \"mocha\""
   },
   "type": "module"
