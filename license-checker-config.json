@@ -6,6 +6,7 @@
   },
   "ignore": [
     "license.txt",
+    ".github/",
     ".lefthook/",
     "*/**/.terraform.lock.hcl",
     "*/**/.terraform/*",
