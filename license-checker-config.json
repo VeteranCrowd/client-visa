@@ -10,7 +10,9 @@
     ".lefthook/",
     "*/**/.terraform.lock.hcl",
     "*/**/.terraform/*",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    "*/**/*.crt",
+    "*/**/*.pem"
   ],
   "ignoreFile": "./.gitignore",
   "license": "./license.txt",
